@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    float st;
+    float nd;
+    float rd;
+    
+    cout<<"Enter the first number: ";
+    cin>>st;
+    
+    cout<<"Enter the second number: ";
+    cin>>nd;
+    
+    cout<<"Enter the third number: ";
+    cin>>rd;
+    
+    if (st>nd && st>rd)
+        cout<<"The largest number is: "<<st<<endl;
+    else if (nd>st && nd>rd)
+        cout<<"The largest number is: "<<nd<<endl;
+    else if (rd>st && rd>nd)
+        cout<<"The largest number is: "<<rd<<endl;
+    else
+        cout<<"You entered some numbers with the same value"<<endl;
+    
+    return 0;
+}
