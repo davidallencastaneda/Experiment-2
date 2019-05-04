@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    int in;
+    int sum;
+    int zero;
+    
+    
+    while(!zero)
+    {
+        cout<<"Enter a number: ";
+        cin>>num;
+        if(num<=0)
+        {
+            cout<<"Thank you!"<<endl;
+            break;
+        }
+        else
+        {
+            sum=0;
+            for(in=1; in<=num; in++)
+            {
+                sum+=in;
+            }
+            cout<<"The sum of all whole numbers from 1 to "<<num<<" is "<<sum<<endl;
+        }
+        
+    }
+    
+    return 0;
+    
+}
