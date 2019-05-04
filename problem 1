@@ -1,0 +1,53 @@
+
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    char pack;
+    double hr;
+    
+    
+    cout << "Here is a list of the packages:" << endl;
+    cout << "Package A: P995/mo with 10 hrs of access (add P20/hr)" << endl;
+    cout << "Package B: P1495/mo with 20 hrs of access (add P10/hr)" << endl;
+    cout << "Package C: P1995/mo with unlimited access" << endl;
+    
+    cout << "Enter the letter of the package you used: ";
+    cin >> pack;
+    
+    cout << "Enter the amount of hours used: ";
+    cin >> hr;
+    
+    switch (pack)
+    {
+        case 'A':
+        case 'a':
+            if (hr > 10)
+                cout << "Your bill for this month is: P" << 995 + ((hr - 10) * 20) << endl;
+            else
+                cout << "Your bill for this month is: P" << 995 << endl;
+            break;
+            
+        case 'B':
+        case 'b':
+            if (hr > 20)
+                cout << "Your bill for this month is: P" << 1495 + ((hr - 20) * 10) << endl;
+            else
+                cout << "Your bill for this month is: P" << 1495 << endl;
+            break;
+            
+        case 'C':
+        case 'c':
+                cout << "Your bill for this month is: P" << 1995 << endl;
+            break;
+        
+        default:
+            cout << "You entered an invalid character" << endl;
+            break;
+        
+    }
+    
+    return 0;
+}
