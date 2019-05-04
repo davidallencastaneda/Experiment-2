@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    int num;
+    
+    cout<<"The computer is counting..."<<endl;
+    
+    for(num=1; num<=10; num++)
+    {
+        cout<<num<<", ";
+    }
+    
+    for(num=6; num<=15; num++)
+    {
+        if(num<15)
+            cout<<2*num<<", ";
+        else
+            cout<<2*num<<endl;
+    }
+    
+    return 0;
+}
