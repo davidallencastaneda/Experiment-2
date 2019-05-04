@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+using namespace std;
+int main()
+
+{
+    double gallons;
+    double unpaid;
+    
+    cout << "Enter the amount of water you consumed in gallons: ";
+    cin >> gallons;
+    
+    cout << "Enter your unpaid balance (if there is none, enter 0): ";
+    cin >> unpaid;
+    
+    if (unpaid > 0)
+        cout << "Your water bill is: P" << 35 + (gallons * 1.1) + unpaid + 20 << endl;
+    else
+        cout << "Your water bill is: P" << 35 + (gallons * 1.1) << endl;
+    
+    
+    return 0;
+}
